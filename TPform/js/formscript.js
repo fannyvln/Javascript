@@ -83,8 +83,8 @@ function checkpwd2(){
   var pwd1 = document.getElementById("pwd");
   var pwd2 = document.getElementById("pwd2");
 
-  if (cpwd = true){
-    if (pwd1.value === pwd2.value){
+  if (pwd1 !== ""){
+    if (cpwd === true && pwd1.value === pwd2.value){
       cpwd2 = true;
       pwd2Tip.textContent = "OK";
     } else {
