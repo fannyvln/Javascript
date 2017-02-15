@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script language="javascript" src="formscript.js"></script>      <!-- The form script-->
+  </head>
+
+<body>
+	<h1>Sign up</h1>
+		<form method="POST" action="#">
+			<label for="lname">First name  </label><input type="text" id="fname"/>
+			<label for="fname">Last name </label><input type="text" id="lname"/>
+			<span id="nametip"></span><br />
+			<label for="age">Age </label><input type="text" id="age" /><span id="agetip"></span><br />
+			<label for="id">Identifiant </label><input type="text" id="id" /> <span id="idtip"></span><br />
+			<label for="pwd">Password </label><input type="password" id="pwd"/><span id="pwdtip"></span><br />
+			<span id="strength"></span><br/>
+			<label for="pwd2">Password (check) </label><input type="password" id="pwd2" />
+			<span id="pwd2tip"></span><br />
+			<input type="checkbox" name="CGU" id="CGU">Accept the CGU </input><span id="checktip"></span>
+			<br />
+			<input id="submit" type="submit" disabled="disabled">
+		</form>
+</body>
+
+<footer>
+  © 2017 - Fanny Velien and Maëlle Pinto
+</footer>
+
+</html>

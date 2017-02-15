@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">     <!--Import Google Icon Font-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>     <!--Import materialize.css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    <!--Let browser know website is optimized for mobile-->
+    <script language="javascript" src="js/formscript.js"></script>      <!-- The form script-->
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Sign up</h1>
+      <form class="col s2">
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="fname" type="text" class="validate">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="lname" type="text" class="validate">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="input-field col s4" id="nametip"></div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <i class="material-icons prefix">account_circle</i>
+            <input placeholder="Your id must contain up to 8 letters" id="id" type="text" class="validate">
+            <label for="id">Identifiant</label>
+          </div>
+          <div class="input-field col s4" id="idtip"></div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <i class="material-icons prefix">mode_edit</i>
+            <input placeholder="You need to be older than 18" id="age" type="text" class="validate">
+            <label for="age">Age</label>
+          </div>
+          <div class="input-field col s4" id="agetip"></div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <i class="material-icons prefix">lock_outline</i>
+            <input placeholder="At least 8 characters, one lowercase, one uppercase, one number and a special character" id="pwd" type="password" class="validate">
+            <label for="pwd">Password</label>
+          </div>
+          <div class="input-field col s4" id="pwdtip"></div>
+        </div>
+        <div class="row">
+          <div class="input field col s6">
+            <div class="progress">
+              <div class="determinate" style="width: 0%" id="progress"></div>
+            </div>
+          </div>
+          <div class="input-field col s2 "><span id="strength"></span></div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <i class="material-icons prefix">lock</i>
+            <input id="pwd2" type="password" class="validate">
+            <label for="pwd2">Password (check)</label>
+          </div>
+          <div class="input-field col s4" id="pwd2tip"></div>
+        </div>
+        <div class="row">
+          <div class="col s8">
+            <input type="checkbox" id="CGU"    />
+            <label for="CGU">I agree with the CGU</label>
+          </div>
+          <div class="input-field col s4" id="checktip"></div>
+        </div>
+        <div class="row">
+          <div class="col s6 offset-s6">
+            <button class="btn waves-effect waves-light" type="submit" id="submit" disabled="disabled">Submit
+            <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+
+        </div>
+      </form>
+    </div>
+
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+        <h5 class="white-text">Practical Work 1 of Javascript</h5>
+        <p class="grey-text text-lighten-4">According to: <a class="grey-text text-lighten-2">http://liris.cnrs.fr/~pchampin/enseignement/intro-js/s1.html</a></p>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2017 - Fanny Velien and Maëlle Pinto
+    </div>
+  </div>
+</footer>
+
+</html>
